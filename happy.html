@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+    <html>
+        <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="styles2.css">
+        <title>I LOVE YOU</title>
+
+        </head>
+        <body>
+            <header class="header-two">
+                <h1>I LOVEEEE YOU SOOO MUCH BABYYYYY</h1>
+            </header>
+            <img src="images/img1.jpg" alt="img1">
+            <img src="images/img2.jpg" alt="img1">
+            <img src="images/img3.jpg" alt="img1">
+            <img src="images/img4.jpg" alt="img1">
+            <img src="images/img5.jpg" alt="img1">
+
+            <p>MUAHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH</p>
+
+            <div class="heart-container"></div> <!-- Container for hearts -->
+
+            <script>
+                function createHeart() {
+                    const heart = document.createElement("div");
+                    heart.classList.add("heart");
+                    heart.innerHTML = "❤️"; // Heart emoji (can replace with an image)
+        
+                    // Append heart to the container
+                    document.querySelector(".heart-container").appendChild(heart);
+        
+                    // Random horizontal position
+                    heart.style.left = Math.random() * 100 + "vw";
+        
+                    // Random animation duration (between 3s and 5s)
+                    heart.style.animationDuration = Math.random() * 2 + 3 + "s"; 
+        
+                    // Remove heart after animation
+                    setTimeout(() => {
+                        heart.remove();
+                    }, 5000);
+                }
+        
+                // Generate a heart every 500ms
+                setInterval(createHeart, 500);
+            </script>
+
+        </body>
+    </html>

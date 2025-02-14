@@ -1,0 +1,89 @@
+@font-face {
+    font-family: Depixel;
+    src: url(fonts/depixel/DePixelBreit.ttf) format(truetype);
+}
+@font-face {
+    font-family: Romantic;
+    src: url(fonts/Romantic.ttf) format(truetype);
+}
+@font-face {
+    font-family: RomanticLove;
+    src: url(fonts/RomanticLove-Regular.ttf) format(truetype);
+}
+@font-face {
+    font-family: Valentine;
+    src: url(fonts/Valentine.ttf) format(truetype);
+}
+@font-face {
+    font-family: Daily Bubbles;
+    src: url(fonts/Daily\ Bubble.ttf) format(truetype);
+}
+
+header{
+    padding: 10px;
+    text-align: center;
+    font-family: Romantic, sans-serif;
+    font-size: 3em;
+    color: white;
+    text-shadow: 0 0 20px red;
+    border: 10px solid;
+}
+    
+
+body{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column-reverse;
+    background: red;
+    background: -webkit-linear-gradient(to right, #f499a8, red);
+    background: linear-gradient(to right, #f9758b, rgb(162, 111, 224));
+    color: black;
+}
+
+h2{
+    font-family: Valentine, sans-serif;
+    font-size:xx-large;
+}
+
+
+.paragraph-one{
+    font-family: RomanticLove, sans-serif;
+    font-size: 1.5em;
+    padding: 0px;
+    line-height: 1.8;
+    letter-spacing: 1px;
+    text-align: center;
+    text-decoration: solid;
+}
+
+.proposal{
+    font-family: Depixel, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 5px;
+    text-align: center;
+}
+
+button{
+    font-family: Depixel, sans-serif;
+    font-weight: bolder;
+    background-color: rgb(255, 189, 200);
+    color: white ;
+    width: 100px;
+    height: 50px;
+    transition: box-shadow 0.5s ease-in;
+    transition: transform 0.1s ease-in;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #ffe0e5;
+    transform: scale(1.1);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 0 0 50px;
+}
